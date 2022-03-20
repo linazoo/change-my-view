@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { NavBar } from "./components/NavBar";
+import PostList from "./components/PostList";
+import { fetchMainPosts } from "./utils/api";
 
 function App() {
+  const [posts, setPosts] = React.useState([]);
+  React.useEffect(() => {
+    fetchMainPosts("top").then((posts) => {
+      setPosts(posts);
+    });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container">
+      <NavBar />
+      <PostList posts={posts} />
     </div>
   );
 }
