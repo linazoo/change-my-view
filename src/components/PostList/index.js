@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function PostList({ posts = [] }) {
   return (
-    <div className="grid">
+    <div className="main">
       {posts.map((post) => {
         // console.log(post);
         return (

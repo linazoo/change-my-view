@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 export function NavBar() {
   return (
-    <nav className="flex">
+    <nav>
       <div className="logo">
         <Logo />
       </div>
