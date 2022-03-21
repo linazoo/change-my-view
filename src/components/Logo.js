@@ -3,13 +3,14 @@ import React from "react";
 export default function Logo() {
   return (
     <svg
+      className="logo"
       version="1.1"
       x="0px"
       y="0px"
       width="100%"
       height="100%"
       viewBox="0 0 296 157.333"
-      enable-background="new 0 0 296 157.333"
+      enableBackground="new 0 0 296 157.333"
     >
       <g id="Layer_1">
         <g>
