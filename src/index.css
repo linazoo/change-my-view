@@ -3,12 +3,17 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 1vh;
+  background: #eadbcd;
+  --red: #c53321;
+  --yellow: #f0cb0b;
+  --white: rgba(255, 255, 255, 0.7);
+  --purple: #c06c98;
+  --orange: #dc885a;
+  --green: #368e59;
 }
 
 code {
@@ -29,12 +34,13 @@ a {
 }
 .container {
   height: 100vh;
-  margin: 2rem;
+  margin: 4rem;
 }
 nav {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 17rem 1fr;
   gap: 16px;
+  align-items: center;
 }
 .navlinks {
   display: grid;
@@ -42,11 +48,14 @@ nav {
 }
 
 .logo {
-  width: 200px;
+  width: 16rem;
 }
 
 .main {
-  margin: 2rem;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-top: 6rem;
 }
 
 /* main page post list */
@@ -55,7 +64,7 @@ nav {
   font-weight: bold;
 }
 .post-title:hover {
-  color: #c06c98;
+  background-color: var(--white);
 }
 .post-title::after {
   content: "→";
@@ -69,6 +78,7 @@ nav {
 }
 
 .btn {
+  font-family: "Montserrat", sans-serif;
   padding: 16px 60px 16px 60px;
   text-transform: uppercase;
   letter-spacing: 0.25em;
@@ -82,39 +92,44 @@ nav {
 }
 
 .top {
-  border: 2px solid #c06c98;
+  background-color: var(--purple);
+  color: var(--white);
 }
 .top:hover {
-  background-color: #c06c98;
-  color: white;
+  background-color: transparent;
+  color: rgb(26, 26, 26);
 }
 .new {
-  border: 2px solid #dc885a;
+  color: var(--white);
+  background-color: var(--orange);
 }
 .new:hover {
-  background-color: #dc885a;
-  color: white;
+  background-color: transparent;
+  color: rgb(26, 26, 26);
 }
 .hot {
-  border: 2px solid #d31c34;
+  background-color: var(--red);
+  color: var(--white);
 }
 .hot:hover {
-  background-color: #d31c34;
-  color: white;
+  background-color: transparent;
+  color: rgb(26, 26, 26);
 }
 
 .search {
-  border-bottom: 2px solid #368e59;
+  background-color: var(--green);
+  color: var(--white);
 }
 .search:hover {
-  background-color: #368e59;
-  color: white;
+  background-color: transparent;
+  color: rgb(26, 26, 26);
 }
 
 /* Posts */
 .title {
   font-size: 42px;
   margin-bottom: 1em;
+  background-color: var(--white);
 }
 
 .long-text {
@@ -125,7 +140,8 @@ nav {
 
 .replies {
   font-size: 36px;
-  font-style: italic;
+  font-weight: 600;
+  background: var(--yellow);
 }
 
 .each-post {
@@ -139,7 +155,9 @@ nav {
 
 .comments {
   overflow: scroll;
-  height: 700px;
+  height: 800px;
+
+  padding: 20px;
 }
 
 .author {
@@ -158,8 +176,5 @@ nav {
     align-content: space-evenly;
     align-items: center;
     gap: 16px;
-  }
-  .main {
-    margin: 0.25rem;
   }
 }
