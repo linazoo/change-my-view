@@ -18,16 +18,32 @@ export default function Post() {
 
   return (
     <div className="each-post">
-      <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
-      <p dangerouslySetInnerHTML={{ __html: post.selftext }} />
+      <div>
+        <h1
+          className="title"
+          dangerouslySetInnerHTML={{ __html: post.title }}
+        />
+        <p
+          className="long-text"
+          dangerouslySetInnerHTML={{ __html: post.selftext }}
+        />
+      </div>
 
-      <ul>
+      <ul className="comments">
+        <p className="replies">Replies</p>
         {comments.map((comment) => {
           return (
             <li key={comment.data.id}>
               <div>
-                <p dangerouslySetInnerHTML={{ __html: comment.data.body }} />
-                <p dangerouslySetInnerHTML={{ __html: comment.data.author }} />
+                <p
+                  className="author"
+                  dangerouslySetInnerHTML={{ __html: comment.data.author }}
+                />
+                <p
+                  className="long-text"
+                  dangerouslySetInnerHTML={{ __html: comment.data.body }}
+                />
+                <hr />
               </div>
             </li>
           );
