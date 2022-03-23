@@ -17,7 +17,7 @@ export default function Post() {
   }, []);
 
   return (
-    <div>
+    <div className="each-post">
       <h1 dangerouslySetInnerHTML={{ __html: post.title }} />
       <p dangerouslySetInnerHTML={{ __html: post.selftext }} />
 
