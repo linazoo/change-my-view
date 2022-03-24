@@ -50,6 +50,9 @@ nav {
 .logo {
   width: 16rem;
 }
+/* .logo:hover {
+  width: 75%;
+} */
 
 .main {
   position: relative;
@@ -164,10 +167,10 @@ nav {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 805px) {
+@media only screen and (max-width: 736px) {
   .navlinks {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, 200px);
   }
   nav {
     display: grid;
@@ -177,9 +180,36 @@ nav {
     align-items: center;
     gap: 16px;
   }
+
   .each-post {
     display: grid;
     grid-template-columns: 1fr;
     font-size: 14px;
+  }
+  .container {
+    margin: 2rem;
+  }
+  .main {
+    padding-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .title {
+    font-size: 21px;
+    margin-bottom: 0.25em;
+  }
+
+  .long-text {
+    font-size: 14px;
+    line-height: 20px;
+    overflow-wrap: break-word;
+  }
+
+  .container {
+    margin: 1rem;
+  }
+  h1 {
+    font-size: 1em;
   }
 }

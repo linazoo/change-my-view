@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export function NavBar({ handleButtonClick }) {
   return (
     <nav>
-      <div className="logo">
+      <div id="logo">
         <Logo />
       </div>
       <div className="links">
