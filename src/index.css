@@ -161,7 +161,7 @@ nav {
 }
 
 .author {
-  font-style: italic;
+  font-weight: bold;
 }
 
 @media only screen and (max-width: 805px) {
@@ -176,5 +176,10 @@ nav {
     align-content: space-evenly;
     align-items: center;
     gap: 16px;
+  }
+  .each-post {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 14px;
   }
 }
