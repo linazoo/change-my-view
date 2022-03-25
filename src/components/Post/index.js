@@ -17,7 +17,7 @@ export default function Post() {
   }, []);
 
   return (
-    <div className="each-post">
+    <div tabindex="0" className="each-post">
       <div>
         <h1
           className="title"
@@ -29,7 +29,7 @@ export default function Post() {
         />
       </div>
 
-      <ul className="comments">
+      <ul tabindex="0" className="comments">
         <p className="replies">Replies</p>
         {comments.map((comment) => {
           return (

@@ -16,18 +16,11 @@ function App() {
     });
   }, []);
 
-  const handleClick = (type) => {
-    console.log(type);
-    fetchMainPosts(type).then((posts) => {
-      setPosts(posts);
-    });
-  };
-
   return (
     <React.Fragment>
       <div className="App container">
         <Router>
-          <NavBar handleButtonClick={handleClick} />
+          <NavBar />
           <Routes>
             <Route path="/new" element={<NewPage />} />
             <Route path="/top" element={<TopPage />} />
