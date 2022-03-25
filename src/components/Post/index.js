@@ -14,10 +14,10 @@ export default function Post() {
       const postInfo = data[0].data.children[0].data;
       setPost(postInfo);
     });
-  }, []);
+  }, [id]);
 
   return (
-    <div tabindex="0" className="each-post">
+    <div tabIndex="0" className="each-post">
       <div>
         <h1
           className="title"
@@ -29,7 +29,7 @@ export default function Post() {
         />
       </div>
 
-      <ul tabindex="0" className="comments">
+      <ul tabIndex="0" className="comments">
         <p className="replies">Replies</p>
         {comments.map((comment) => {
           return (

@@ -7,6 +7,7 @@ export function NavBar() {
     <nav>
       <div id="logo" alt="Change My View">
         <a
+          rel="noreferrer"
           href="https://www.reddit.com/r/changemyview/wiki/index#wiki_what_is_.2Fr.2Fchangemyview.3F"
           target="_blank"
         >
