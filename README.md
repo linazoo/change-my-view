@@ -1,7 +1,7 @@
 # Change My View (sexy clone)
 Netlify: [Change View Sexy Clone](https://harmonious-sherbet-7d7e8c.netlify.app/)
 
-This project is inpired by the subreddit [Change my view](https://www.reddit.com/r/changemyview/).
+This project is inspired by the subreddit [Change my view](https://www.reddit.com/r/changemyview/).
 
 #What is /r/changemyview?
 CMV is a subreddit dedicated to civil discourse, and is built around the idea that in order to resolve our differences, we must first understand them. We believe that productive conversation requires respect and openness, and that certitude is the enemy of understanding.
